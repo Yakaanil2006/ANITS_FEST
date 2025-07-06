@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <title>ANITS-CSM Fest</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ANITS-CSM Fest</title>
     <style>
         body {
             margin: 0;
@@ -58,17 +58,20 @@
             border-radius: 10px;
             width: 280px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s;
+            transition: transform 0.3s, box-shadow 0.3s;
         }
 
         .event-card:hover {
             transform: scale(1.05);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
         }
 
         .event-card img {
             width: 100%;
             height: 180px;
             object-fit: cover;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
         }
 
         .event-card h2 {
@@ -89,6 +92,7 @@
             font-size: 16px;
             border-radius: 5px;
             cursor: pointer;
+            transition: background-color 0.3s;
         }
 
         .register-btn:hover {
@@ -102,73 +106,84 @@
             padding: 15px;
             margin-top: 40px;
         }
+
+        a {
+            color: white;
+            text-decoration: underline;
+        }
+
+        a:hover {
+            color: #ffd700;
+        }
     </style>
 </head>
 <body>
 
     <header>
-        <img src="ANITSLOGO.png" alt="ANITS Logo">
+        <img src="ANITSLOGO.png" alt="ANITS College Logo">
     </header>
 
     <marquee>DEPARTMENT OF COMPUTER SCIENCE AND ENGINEERING (AI & DS)</marquee>
 
     <div class="intro">
         <h2>Presents</h2>
-        <h2>Two Days National Level Tech Fest</h2>
-        <h2>March 1st Week</h2>
+        <p>Two Days National Level Tech Fest</p>
+        <p>March 1st Week</p>
     </div>
 
     <h1 class="section-title">INVENTUM TECHNICAL EVENTS</h1>
     <div class="events-section">
         <div class="event-card">
-            <img src="ML.jpeg" alt="Machine Learning Hackathon">
+            <img src="ML.jpeg" alt="Machine Learning Hackathon Banner">
             <h2>MACHINE LEARNING HACKATHON</h2>
         </div>
         <div class="event-card">
-            <img src="coderush.jpg" alt="Code Rush">
+            <img src="coderush.jpg" alt="Code Rush Poster">
             <h2>CODE RUSH 3.0</h2>
         </div>
         <div class="event-card">
-            <img src="PREXPO.jpeg" alt="Project Expo">
+            <img src="PREXPO.jpeg" alt="Project Expo Poster">
             <h2>PROJECT EXPO</h2>
         </div>
         <div class="event-card">
-            <img src="paperpre.jpeg" alt="Paper Presentation">
+            <img src="paperpre.jpeg" alt="Paper Presentation Poster">
             <h2>PAPER PRESENTATION</h2>
         </div>
         <div class="event-card">
-            <img src="reversecoding.webp" alt="Reverse Coding">
+            <img src="reversecoding.webp" alt="Reverse Coding Poster">
             <h2>REVERSE CODING</h2>
         </div>
     </div>
-    <button class="register-btn" onclick="window.location.href='Technical_regis.html'">Register for Technical Events</button>
+
+    <button class="register-btn" title="Click to register for technical events" onclick="window.location.href='Technical_regis.html'">Register for Technical Events</button>
 
     <h1 class="section-title">INVENTUM NON-TECHNICAL EVENTS</h1>
     <div class="events-section">
         <div class="event-card">
-            <img src="admad.jpeg" alt="Ad Mad Show">
+            <img src="admad.jpeg" alt="Ad Mad Show Poster">
             <h2>AD MAD SHOW</h2>
         </div>
         <div class="event-card">
-            <img src="Talentexpo.jpeg" alt="Talent Expo">
+            <img src="Talentexpo.jpeg" alt="Talent Expo Poster">
             <h2>TALENT EXPO</h2>
         </div>
         <div class="event-card">
-            <img src="pexel.png" alt="Pixel Perfect">
+            <img src="pexel.png" alt="Pixel Perfect Design Contest">
             <h2>PIXEL PERFECT</h2>
         </div>
         <div class="event-card">
-            <img src="memes.jpeg" alt="Memes Mania">
+            <img src="memes.jpeg" alt="Memes Mania Poster">
             <h2>MEMES MANIA</h2>
         </div>
     </div>
-    <button class="register-btn" onclick="window.location.href='Non_technical_regis.html'">Register for Non-Technical Events</button>
+
+    <button class="register-btn" title="Click to register for non-technical events" onclick="window.location.href='Non_technical_regis.html'">Register for Non-Technical Events</button>
 
     <h1 class="section-title">Contact Us</h1>
     <div class="intro">
-        <p><strong>For any queries, please contact:</strong></p>
+        <p>For any queries, please contact:</p>
         <p>Email: <a href="mailto:yakaanil.23.csm@anits.edu.in">yakaanil.23.csm@anits.edu.in</a></p>
-        <p>Phone Number: <a href="tel:1234567890">1234567890</a></p>
+        <p>Phone: <a href="tel:1234567890">1234567890</a></p>
     </div>
 
     <footer>
